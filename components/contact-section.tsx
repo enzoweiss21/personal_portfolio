@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent } from "@/components/ui/card"
+import emailjs from '@emailjs/browser'
 
 interface ContactMethod {
   icon: React.ReactNode
@@ -77,6 +78,7 @@ export function ContactSection() {
     message: "",
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
@@ -86,16 +88,43 @@ export function ContactSection() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setSubmitStatus('idle')
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 2000))
+    try {
+      // EmailJS configuration - you'll need to replace these with your actual values
+      const serviceId = 'service_your_service_id' // Replace with your EmailJS service ID
+      const templateId = 'template_your_template_id' // Replace with your EmailJS template ID
+      const publicKey = 'your_public_key' // Replace with your EmailJS public key
 
-    // Reset form
-    setFormData({ name: "", email: "", subject: "", message: "" })
-    setIsSubmitting(false)
+      // Send email using EmailJS
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          to_email: 'eweiss5244@sdsu.edu', // Your email address
+        },
+        publicKey
+      )
 
-    // In a real app, you would send the data to your backend
-    alert("Message sent successfully!")
+      // Reset form on success
+      setFormData({ name: "", email: "", subject: "", message: "" })
+      setSubmitStatus('success')
+      
+      // Reset success message after 5 seconds
+      setTimeout(() => setSubmitStatus('idle'), 5000)
+    } catch (error) {
+      console.error('Error sending email:', error)
+      setSubmitStatus('error')
+      
+      // Reset error message after 5 seconds
+      setTimeout(() => setSubmitStatus('idle'), 5000)
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -288,6 +317,23 @@ export function ContactSection() {
                       </div>
                     )}
                   </Button>
+
+                  {/* Status Messages */}
+                  {submitStatus === 'success' && (
+                    <div className="mt-4 p-4 bg-green-100 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg">
+                      <p className="text-green-800 dark:text-green-200 text-sm font-medium">
+                        ✅ Message sent successfully! I'll get back to you soon.
+                      </p>
+                    </div>
+                  )}
+                  
+                  {submitStatus === 'error' && (
+                    <div className="mt-4 p-4 bg-red-100 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg">
+                      <p className="text-red-800 dark:text-red-200 text-sm font-medium">
+                        ❌ Failed to send message. Please try again or contact me directly at eweiss5244@sdsu.edu
+                      </p>
+                    </div>
+                  )}
                 </form>
               </CardContent>
             </Card>
