@@ -64,7 +64,13 @@ const projects: Project[] = [
       "Developed and deployed Edit Profile feature with SQL-based validation for usernames/emails, reducing failed profile updates by 99%. Optimized Profile page UX with infinite scroll, extending average session duration by 115%.",
     technologies: ["Python", "JavaScript", "SQL", "React", "Backend APIs"],
     githubUrl: "https://github.com/enzoweiss21",
-    image: "/modern-user-profile-interface-with-infinite-scroll.jpg",
+    image: "/voodies1.jpeg",
+    images: [
+      "/voodies1.jpeg",
+      "/voodies2.jpeg", 
+      "/voodies3.jpeg",
+      "/voodies4.jpeg"
+    ],
     category: "Full-Stack",
     icon: <Globe className="w-5 h-5" />,
     gradient: "radial-gradient(circle, rgba(168,85,247,0.15) 0%, rgba(147,51,234,0.06) 50%, rgba(126,34,206,0) 100%)",
@@ -112,7 +118,7 @@ function ProjectImageCarousel({ images, title }: { images: string[], title: stri
       <img
         src={images[0] || "/placeholder.svg"}
         alt={title}
-        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+        className="w-full h-full object-contain bg-slate-50 dark:bg-slate-800 transition-transform duration-300 group-hover:scale-105"
       />
     )
   }
@@ -122,7 +128,7 @@ function ProjectImageCarousel({ images, title }: { images: string[], title: stri
       <img
         src={images[currentIndex]}
         alt={`${title} - Image ${currentIndex + 1}`}
-        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+        className="w-full h-full object-contain bg-slate-50 dark:bg-slate-800 transition-transform duration-300 group-hover:scale-105"
       />
       
       {/* Navigation buttons */}
@@ -199,7 +205,7 @@ export function ProjectsSection() {
 
                 <Card className="relative w-full border-0 shadow-lg bg-card/80 backdrop-blur-sm">
                   <CardContent className="p-0 flex flex-col">
-                    <div className="relative h-48 overflow-hidden rounded-t-2xl">
+                    <div className="relative h-64 overflow-hidden rounded-t-2xl">
                       {project.images && project.images.length > 1 ? (
                         <ProjectImageCarousel 
                           images={project.images} 
@@ -209,7 +215,7 @@ export function ProjectsSection() {
                         <img
                           src={project.image || "/placeholder.svg"}
                           alt={project.title}
-                          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                          className="w-full h-full object-contain bg-slate-50 dark:bg-slate-800 transition-transform duration-300 group-hover:scale-105"
                         />
                       )}
                       <div className="absolute top-4 left-4 flex items-center gap-2 bg-background/90 backdrop-blur-sm px-3 py-1 rounded-full">
