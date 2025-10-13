@@ -22,22 +22,22 @@ const contactMethods: ContactMethod[] = [
   {
     icon: <Mail className="w-5 h-5" />,
     title: "Email",
-    value: "your.email@example.com",
-    href: "mailto:your.email@example.com",
+    value: "eweiss5244@sdsu.edu",
+    href: "mailto:eweiss5244@sdsu.edu",
     gradient: "radial-gradient(circle, rgba(59,130,246,0.15) 0%, rgba(37,99,235,0.06) 50%, rgba(29,78,216,0) 100%)",
   },
   {
     icon: <Phone className="w-5 h-5" />,
     title: "Phone",
-    value: "+1 (555) 123-4567",
-    href: "tel:+15551234567",
+    value: "917-565-5231",
+    href: "tel:+19175655231",
     gradient: "radial-gradient(circle, rgba(34,197,94,0.15) 0%, rgba(22,163,74,0.06) 50%, rgba(21,128,61,0) 100%)",
   },
   {
     icon: <MapPin className="w-5 h-5" />,
     title: "Location",
-    value: "City, State, USA",
-    href: "#",
+    value: "San Diego, CA",
+    href: "https://maps.apple.com/?q=San+Diego,CA",
     gradient: "radial-gradient(circle, rgba(168,85,247,0.15) 0%, rgba(147,51,234,0.06) 50%, rgba(126,34,206,0) 100%)",
   },
 ]
@@ -46,19 +46,19 @@ const socialLinks = [
   {
     icon: <Github className="w-5 h-5" />,
     name: "GitHub",
-    href: "https://github.com",
+    href: "https://github.com/enzoweiss21",
     color: "hover:text-gray-600",
   },
   {
     icon: <Linkedin className="w-5 h-5" />,
     name: "LinkedIn",
-    href: "https://linkedin.com",
+    href: "https://www.linkedin.com/in/enzoweiss/",
     color: "hover:text-blue-600",
   },
   {
     icon: <Twitter className="w-5 h-5" />,
     name: "Twitter",
-    href: "https://twitter.com",
+    href: "https://x.com/weiss_enzo",
     color: "hover:text-blue-400",
   },
   {
@@ -235,7 +235,7 @@ export function ContactSection() {
                         value={formData.email}
                         onChange={handleInputChange}
                         className="bg-background/50 border-border/50 focus:border-primary"
-                        placeholder="your.email@example.com"
+                        placeholder="eweiss5244@sdsu.edu"
                       />
                     </div>
                   </div>

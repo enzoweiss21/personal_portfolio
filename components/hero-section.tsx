@@ -199,7 +199,7 @@ General Member                                                                  
               <Github className="w-6 h-6" />
             </motion.a>
             <motion.a
-              href="https://linkedin.com/in/enzoweiss"
+              href="https://www.linkedin.com/in/enzoweiss/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-card/80 backdrop-blur-sm hover:bg-primary hover:text-primary-foreground transition-colors border border-border/50"
