@@ -18,6 +18,26 @@ export function XSection() {
     } else if ((window as any).twttr && (window as any).twttr.widgets) {
       ;(window as any).twttr.widgets.load()
     }
+
+    // Add custom CSS to make Twitter embed fill container
+    const style = document.createElement('style')
+    style.textContent = `
+      .twitter-tweet {
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 !important;
+      }
+      .twitter-tweet iframe {
+        width: 100% !important;
+        max-width: none !important;
+        min-width: 100% !important;
+      }
+      .twitter-tweet-rendered {
+        width: 100% !important;
+        max-width: none !important;
+      }
+    `
+    document.head.appendChild(style)
   }, [])
 
   return (
@@ -43,13 +63,18 @@ export function XSection() {
           transition={{ duration: 0.5 }}
           className="flex justify-center mb-8"
         >
-          <div className="w-full max-w-[650px] bg-card rounded-xl shadow-xl border border-border overflow-hidden">
+          <div className="w-full max-w-[500px] bg-card rounded-xl shadow-xl border border-border overflow-hidden">
             <div className="flex items-center gap-3 px-6 py-4 border-b border-border bg-card">
               <Twitter className="w-7 h-7 text-[#1DA1F2]" />
               <span className="text-xl font-semibold text-foreground">X</span>
             </div>
-            <div className="bg-card p-0">
-              <blockquote className="twitter-tweet" data-theme="light">
+            <div className="bg-card">
+              <blockquote 
+                className="twitter-tweet" 
+                data-theme="light"
+                data-width="100%"
+                style={{ width: '100%', maxWidth: 'none', margin: 0 }}
+              >
                 <p lang="zxx" dir="ltr">
                   <a href="https://t.co/F1mkgFEN5l">pic.twitter.com/F1mkgFEN5l</a>
                 </p>
@@ -83,5 +108,3 @@ export function XSection() {
     </section>
   )
 }
-
-

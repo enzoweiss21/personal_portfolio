@@ -6,7 +6,6 @@ import { ExperienceSection } from "@/components/experience-section"
 import { ContactSection } from "@/components/contact-section"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { LinkedInSection } from "@/components/linkedin-section"
-import { XSection } from "@/components/x-section"
 
 export default function Page() {
   return (
@@ -32,9 +31,6 @@ export default function Page() {
       <ExperienceSection />
 
       <LinkedInSection />
-
-      {/* X (Twitter) Section */}
-      <XSection />
 
       {/* Contact Section */}
       <ContactSection />
