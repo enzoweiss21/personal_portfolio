@@ -302,7 +302,7 @@ export function ContactSection() {
           viewport={{ once: true }}
           className="text-center mt-16 pt-8 border-t border-border/30"
         >
-          <p className="text-muted-foreground">© 2024 Your Name. Built with Next.js, TypeScript, and lots of ☕</p>
+          <p className="text-muted-foreground">© 2024 Enzo Weiss. Built with Next.js, TypeScript, and lots of ☕</p>
         </motion.div>
       </div>
     </section>
