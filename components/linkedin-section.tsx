@@ -21,7 +21,7 @@ export function LinkedInSection() {
   }, [])
 
   return (
-    <section id="linkedin" className="py-20 px-4 relative overflow-hidden">
+    <section id="linkedin" className="py-20 px-4 relative overflow-hidden bg-slate-50 dark:bg-slate-900">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/5 to-background" />
 

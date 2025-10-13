@@ -30,6 +30,7 @@ export default function Page() {
       {/* Experience Section */}
       <ExperienceSection />
 
+      {/* Latest from Enzo Section - LinkedIn and X */}
       <LinkedInSection />
 
       {/* Contact Section */}
