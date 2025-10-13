@@ -48,7 +48,7 @@ const projects: Project[] = [
     title: "NLP Customer Analysis Pipeline",
     description: "Stealth Company - Processing 10,000+ customer conversations weekly",
     longDescription:
-      "Developing NLP pipeline to analyze customer conversations across 5 digital platforms, applying classification and sentiment analysis to uncover pain points and detect trends for banking clients. Built React dashboard and iOS app for real-time insights.",
+      "Developed NLP pipelines to analyze customer conversations across 5 digital platforms, applying classification and sentiment analysis to uncover pain points and detect trends for banking clients. Built React dashboard and iOS app for real-time insights.",
     technologies: ["Python", "React", "Swift", "NLP", "scikit-learn", "iOS"],
     githubUrl: "https://github.com/enzoweiss21",
     image: "/nlp-sentiment-analysis-dashboard-with-charts.jpg",
@@ -77,13 +77,13 @@ const projects: Project[] = [
   },
   {
     id: 4,
-    title: "ZIP Launchpad Solutions",
-    description: "Custom software solutions for 500+ startup ventures",
+    title: "Mentor Magic - Techstars",
+    description: "Automated mentor-founder matching platform for Techstars San Diego",
     longDescription:
-      "Designing software solutions for startup teams in SDSU's ZIP Launchpad program. Engineering websites and iOS applications using Python, JavaScript, React, and Swift to turn client concepts into deployable MVPs.",
-    technologies: ["Python", "JavaScript", "React", "Swift", "iOS", "Web Development"],
+      "Designed and deployed a React web application hosted on Vercel with a Supabase backend for Techstars San Diego, automating mentor–founder matching for 12 companies, 31 founders, and 100+ mentors in the 2025 cohort.",
+    technologies: ["React", "Supabase", "Vercel", "JavaScript", "Web Development", "Database"],
     githubUrl: "https://github.com/enzoweiss21",
-    image: "/startup-mvp-development-workspace-with-multiple-sc.jpg",
+    image: "/techstars.jpeg",
     category: "Full-Stack",
     icon: <Code className="w-5 h-5" />,
     gradient: "radial-gradient(circle, rgba(249,115,22,0.15) 0%, rgba(234,88,12,0.06) 50%, rgba(194,65,12,0) 100%)",
