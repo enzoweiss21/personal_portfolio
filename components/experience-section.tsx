@@ -74,6 +74,21 @@ const experiences: Experience[] =
       "Optimized Profile page UX by implementing infinite scroll, reducing navigation clicks to zero and extending average session duration by up to 115%."
     ],
     "technologies": ["SQL", "React", "Node.js"]
+  },
+  {
+    "id": 5,
+    "title": "Bachelor of Science in Computer Science (Minor: Mathematics)",
+    "company": "San Diego State University",
+    "location": "San Diego, CA",
+    "period": "Expected May 2027",
+    "type": "education",
+    "companyUrl": "https://www.sdsu.edu/",
+    "description": [
+      "Maintaining a 3.7/4.0 GPA while pursuing comprehensive studies in computer science fundamentals and advanced mathematics.",
+      "Relevant coursework includes Data Structures, Advanced Programming Languages, Software Systems, Statistics, Artificial Intelligence, Object-Oriented Programming, Computer Organization, and Linear Algebra.",
+      "Certification: Machine Learning Foundations (Cornell University, 2025)"
+    ],
+    "technologies": ["Python", "Java", "C/C++", "JavaScript", "Swift", "SQL", "HTML/CSS", "MIPS", "Flutter"]
   }
 ]
 
