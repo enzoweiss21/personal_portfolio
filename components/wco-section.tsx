@@ -26,94 +26,56 @@ export function WCOSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12"
         >
-          <div className="flex items-center justify-center gap-4 mb-6">
-            <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center">
-              <span className="text-2xl font-bold text-white">W</span>
-            </div>
-            <h2 className="text-4xl md:text-5xl font-black font-montserrat bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 bg-clip-text text-transparent">
+          <div className="flex items-center justify-center gap-3 mb-3">
+            <img 
+              src="/wco.jpg" 
+              alt="World Computing Organization Logo" 
+              className="w-16 h-16 object-contain"
+            />
+            <h2 className="text-3xl md:text-4xl font-black font-montserrat" style={{ color: 'rgb(31, 36, 54)' }}>
               World Computing Organization
             </h2>
           </div>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Founded and led by Enzo Weiss - A thriving computer science community at SDSU with 200+ members, 
+          <p className="text-base text-muted-foreground max-w-3xl mx-auto">
+            Founded and led by Enzo Weiss - A thriving computer science community at SDSU with 270+ members, 
             organizing workshops, guest speakers, and networking events to prepare students for industry success.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
-          {/* Website Card */}
+        <div className="grid md:grid-cols-3 gap-8 mb-8 items-start">
+          {/* Discord Widget */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
             viewport={{ once: true }}
+            className="flex justify-center"
           >
-            <Card className="h-full bg-card/80 backdrop-blur-sm border-border/50 hover:border-blue-500/30 transition-all duration-300 group">
-              <CardContent className="p-6 h-full flex flex-col">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="p-2 rounded-lg bg-blue-500/10">
-                    <Globe className="w-6 h-6 text-blue-500" />
-                  </div>
-                  <h3 className="text-xl font-bold">Official Website</h3>
-                </div>
-                <p className="text-muted-foreground mb-6 flex-grow">
-                  Visit our official website to learn more about WCO, upcoming events, and how to get involved.
-                </p>
-                <Button asChild className="w-full bg-blue-500 hover:bg-blue-600 text-white">
-                  <a
-                    href="https://sdsu.worldcomputing.org/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2"
-                  >
-                    <Globe className="w-4 h-4" />
-                    Visit Website
-                    <ExternalLink className="w-4 h-4" />
-                  </a>
-                </Button>
-              </CardContent>
-            </Card>
-          </motion.div>
-
-          {/* Discord Card */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-            <Card className="h-full bg-card/80 backdrop-blur-sm border-border/50 hover:border-indigo-500/30 transition-all duration-300 group">
-              <CardContent className="p-6 h-full flex flex-col">
-                <div className="flex items-center gap-3 mb-4">
+            <Card className="bg-card/80 backdrop-blur-sm border-border/50 hover:border-indigo-500/30 transition-all duration-300 w-fit">
+              <CardContent className="p-0">
+                <div className="flex items-center gap-3 px-4 py-3 border-b border-border/50">
                   <div className="p-2 rounded-lg bg-indigo-500/10">
                     <Users className="w-6 h-6 text-indigo-500" />
                   </div>
                   <h3 className="text-xl font-bold">Join Our Community</h3>
                 </div>
-                <p className="text-muted-foreground mb-6 flex-grow">
-                  Connect with fellow CS students, get updates on events, and join our active Discord community.
-                </p>
-                <Button asChild className="w-full bg-indigo-500 hover:bg-indigo-600 text-white">
-                  <a
-                    href="https://discord.gg/d32PEnpg"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2"
-                  >
-                    <Users className="w-4 h-4" />
-                    Join Discord
-                    <ExternalLink className="w-4 h-4" />
-                  </a>
-                </Button>
+                <div>
+                  <iframe 
+                    src="https://discord.com/widget?id=1327329013991215104&theme=dark" 
+                    width="350" 
+                    height="500" 
+                    allowTransparency={true}
+                    frameBorder="0" 
+                    sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+                    style={{ display: 'block' }}
+                  />
+                </div>
               </CardContent>
             </Card>
           </motion.div>
-        </div>
 
-        {/* Social Media Embeds */}
-        <div className="grid lg:grid-cols-2 gap-8">
           {/* Instagram Post */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -222,24 +184,25 @@ export function WCOSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
+            className="flex justify-center"
           >
-            <Card className="bg-card/80 backdrop-blur-sm border-border/50 hover:border-blue-600/30 transition-all duration-300">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-3 mb-4">
+            <Card className="bg-card/80 backdrop-blur-sm border-border/50 hover:border-blue-600/30 transition-all duration-300 w-fit">
+              <CardContent className="p-0">
+                <div className="flex items-center gap-3 px-4 py-3 border-b border-border/50">
                   <div className="p-2 rounded-lg bg-blue-600/10">
                     <Linkedin className="w-6 h-6 text-blue-600" />
                   </div>
                   <h3 className="text-xl font-bold">Latest on LinkedIn</h3>
                 </div>
-                <div className="flex justify-center">
+                <div>
                   <iframe 
                     src="https://www.linkedin.com/embed/feed/update/urn:li:share:7384316392268800000?collapsed=1" 
-                    height="668" 
-                    width="504" 
+                    height="500" 
+                    width="350" 
                     frameBorder="0" 
                     allowFullScreen 
                     title="Embedded post"
-                    style={{ maxWidth: '100%', width: '100%' }}
+                    style={{ display: 'block' }}
                   />
                 </div>
               </CardContent>
