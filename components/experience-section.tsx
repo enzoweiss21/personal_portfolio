@@ -97,6 +97,15 @@ const typeLabels = {
 }
 
 export function ExperienceSection() {
+  const handleDownloadResume = () => {
+    const link = document.createElement("a")
+    link.href = "/Enzo_Weiss_Resume.pdf"
+    link.download = "Enzo_Weiss_Resume.pdf"
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
+
   return (
     <section id="experience" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
@@ -213,6 +222,7 @@ export function ExperienceSection() {
           className="text-center mt-12"
         >
           <Button
+            onClick={handleDownloadResume}
             size="lg"
             className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-xl"
           >

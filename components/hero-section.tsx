@@ -13,80 +13,12 @@ export function HeroSection() {
   }
 
   const handleDownloadResume = () => {
-    const resumeContent = `ENZO WEISS
-917-565-5231 | eweiss5244@sdsu.edu | linkedin.com/in/enzoweiss | github.com/enzoweiss21
-
-EDUCATION
-San Diego State University                                                                                                                May 2027
-Bachelor of Science in Computer Science (Minor: Mathematics), GPA: 3.7/4.0                                                San Diego, CA
-Certification: Machine Learning Foundations (Cornell University, 2025)
-Relevant Coursework: Data Structures, Advanced Programming Languages, Software Systems, Statistics,
-Artificial Intelligence, Object-Oriented Programming, Computer Organization, Linear Algebra
-
-TECHNICAL SKILLS
-Languages: Python, Java, C/C++, JavaScript, Swift, SQL, HTML/CSS, MIPS, Flutter
-Developer Tools: React, Pandas, scikit-learn, VS Code, Xcode, Git, AWS, Google Cloud Platform
-
-EXPERIENCE
-Stealth Company                                                                                                                        Aug 2025 – Present
-Software Engineer Intern                                                                                                                        Remote
-• Developing NLP pipeline to analyze 10,000 customer conversations weekly across 5 digital platforms, applying
-  classification and sentiment analysis to uncover pain points, detect trends, and generate insights for a banking client.
-• Implementing a React dashboard and iOS app to deliver analysis and insights from the NLP models, enabling
-  stakeholders to explore customer sentiment and trends in real time.
-
-Break Through Tech (Cornell University)                                                                                        May 2025 – Present
-AI/ML Fellow                                                                                                                                    Remote
-• Engineered end-to-end ML pipelines using Python, scikit-learn, and Pandas across tabular and NLP datasets, achieving
-  an AUC of 0.903 and reducing data preparation time by 30% through feature selection and pipeline automation.
-• Presented sentiment-analysis and classification models (Logistic Regression, Neural Networks) to peers and mentors,
-  demonstrating 81% F1-score on real-world book review data and driving adoption in follow-up projects.
-
-Zip Launch Pad                                                                                                                        Aug 2025 – Present
-Software Engineer Intern                                                                                                            San Diego, CA
-• Designing software solutions for startup teams and staff clients in SDSU's ZIP Launchpad, a program supporting 500+
-  ventures and 1,000+ students.
-• Engineering websites and iOS applications in Python, JavaScript, React, and Swift to turn client concepts into
-  deployable, user-ready MVPs.
-
-Voodies                                                                                                                            Feb 2025 – May 2025
-Full Stack Engineer Intern                                                                                                        San Diego, CA
-• Developed and deployed Edit Profile feature with SQL-based validation for usernames/emails, reducing failed profile
-  updates by 99% and improving reliability for 600+ early users in the April 2025 cohort.
-• Optimized Profile page UX by implementing infinite scroll, reducing navigation clicks to zero and extending average
-  session duration by up to 115%.
-
-PROJECTS
-AI Financial Health Advisor (LPL Financial Hackathon) | Python, JavaScript, AWS, Claude 3.5                        January 2025
-• Engineered prompts for Anthropic's Claude 3.5 model to analyze user bank statements and provide tailored financial
-  feedback and recommendations, ranging from strict saving strategies to aggressive investing approaches.
-• Integrated AWS Bedrock and AWS Lambda with DynamoDB to enhance AI-driven financial analysis, enabling scalable
-  storage/retrieval of user data and real-time personalized insights.
-
-LEADERSHIP / EXTRACURRICULAR
-World Computing Organization                                                                                                Fall 2024 – Present
-Founder & President                                                                                                    San Diego State University
-• Founded and expanded a CS club to 200+ members in 4 months, leading 8 executives and an active Discord community.
-• Organized 20+ events with an average attendance of 55 members, including guest speakers, workshops, and project days,
-  resulting in members being prepared for industry roles and led to multiple internship offers.
-
-Phi Delta Theta                                                                                                            Spring 2024 – Present
-Vice President of Philanthropy                                                                                    San Diego State University
-• Orchestrated 5-day philanthropy week that raised $20,000 for ALS; largest fundraising event in chapter history.
-
-Color Stack                                                                                                                Fall 2024 – Present
-General Member                                                                                                                            Remote
-• Engaged in workshops, technical interview prep, and networking events with peers and industry professionals.`
-
-    const blob = new Blob([resumeContent], { type: "text/plain" })
-    const url = URL.createObjectURL(blob)
-    const a = document.createElement("a")
-    a.href = url
-    a.download = "Enzo_Weiss_Resume.txt"
-    document.body.appendChild(a)
-    a.click()
-    document.body.removeChild(a)
-    URL.revokeObjectURL(url)
+    const link = document.createElement("a")
+    link.href = "/Enzo_Weiss_Resume.pdf"
+    link.download = "Enzo_Weiss_Resume.pdf"
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
   }
 
   return (
