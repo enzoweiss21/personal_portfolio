@@ -62,7 +62,7 @@ export function HeroSection() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="mb-8"
           >
-            <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-primary to-accent p-1">
+            <div className="w-96 h-96 mx-auto rounded-full bg-gradient-to-br from-primary to-accent p-1">
               <img src="/enzo-headshot.jpg" alt="Enzo Weiss" className="w-full h-full rounded-full object-cover" />
             </div>
           </motion.div>
