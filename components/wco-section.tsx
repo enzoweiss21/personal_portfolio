@@ -30,11 +30,11 @@ export function WCOSection() {
         >
           <div className="flex items-center justify-center gap-3 mb-3">
             <img 
-              src="/wco.jpg" 
+              src="/wco.jpeg" 
               alt="World Computing Organization Logo" 
               className="w-16 h-16 object-contain"
             />
-            <h2 className="text-3xl md:text-4xl font-black font-montserrat" style={{ color: 'rgb(31, 36, 54)' }}>
+            <h2 className="text-3xl md:text-4xl font-black font-montserrat text-[rgb(31,36,54)] dark:text-white">
               World Computing Organization
             </h2>
           </div>
