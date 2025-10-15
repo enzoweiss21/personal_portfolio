@@ -49,7 +49,7 @@ const projects: Project[] = [
     description: "Stealth Company - Processing 10,000+ customer conversations weekly",
     longDescription:
       "Developed NLP pipelines to analyze customer conversations across 5 digital platforms, applying classification and sentiment analysis to uncover pain points and detect trends for banking clients. Built React dashboard and iOS app for real-time insights.",
-    technologies: ["Python", "React", "Swift", "NLP", "scikit-learn", "iOS"],
+    technologies: ["Python", "Pandas", "FastAPI", "AWS", "scikit-learn", "Flutter"],
     githubUrl: "https://github.com/enzoweiss21",
     image: "/nlp-sentiment-analysis-dashboard-with-charts.jpg",
     category: "AI/ML",
@@ -62,7 +62,7 @@ const projects: Project[] = [
     description: "Full-stack profile management with SQL validation",
     longDescription:
       "Developed and deployed Edit Profile feature with SQL-based validation for usernames/emails, reducing failed profile updates by 99%. Optimized Profile page UX with infinite scroll, extending average session duration by 115%.",
-    technologies: ["Python", "JavaScript", "SQL", "React", "Backend APIs"],
+    technologies: ["Flutter", "Supabase", "SQL", "Dart", "Backend APIs"],
     githubUrl: "https://github.com/enzoweiss21",
     image: "/voodies1.jpeg",
     images: [
@@ -81,7 +81,7 @@ const projects: Project[] = [
     description: "Automated mentor-founder matching platform for Techstars San Diego",
     longDescription:
       "Designed and deployed a React web application hosted on Vercel with a Supabase backend for Techstars San Diego, automating mentor–founder matching for 12 companies, 31 founders, and 100+ mentors in the 2025 cohort.",
-    technologies: ["React", "Supabase", "Vercel", "JavaScript", "Web Development", "Database"],
+    technologies: ["React", "Supabase", "Vercel", "JavaScript", "SQL"],
     githubUrl: "https://github.com/enzoweiss21",
     image: "/techstars.jpeg",
     category: "Full-Stack",
