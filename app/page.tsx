@@ -6,6 +6,7 @@ import { ExperienceSection } from "@/components/experience-section"
 import { ContactSection } from "@/components/contact-section"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { LinkedInSection } from "@/components/linkedin-section"
+import { WCOSection } from "@/components/wco-section"
 
 export default function Page() {
   return (
@@ -32,6 +33,9 @@ export default function Page() {
 
       {/* Latest from Enzo Section - LinkedIn and X */}
       <LinkedInSection />
+
+      {/* World Computing Organization Section */}
+      <WCOSection />
 
       {/* Contact Section */}
       <ContactSection />

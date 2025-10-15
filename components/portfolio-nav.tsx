@@ -3,7 +3,7 @@
 import type * as React from "react"
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { Home, User, Code, Mail, FileText, Menu, X } from "lucide-react"
+import { Home, User, Code, Mail, FileText, Menu, X, Users } from "lucide-react"
 import { useTheme } from "next-themes"
 
 interface MenuItem {
@@ -42,6 +42,13 @@ const menuItems: MenuItem[] = [
     href: "#experience",
     gradient: "radial-gradient(circle, rgba(249,115,22,0.15) 0%, rgba(234,88,12,0.06) 50%, rgba(194,65,12,0) 100%)",
     iconColor: "text-orange-500",
+  },
+  {
+    icon: <Users className="h-5 w-5" />,
+    label: "WCO",
+    href: "#wco",
+    gradient: "radial-gradient(circle, rgba(59,130,246,0.15) 0%, rgba(37,99,235,0.06) 50%, rgba(29,78,216,0) 100%)",
+    iconColor: "text-blue-500",
   },
   {
     icon: <Mail className="h-5 w-5" />,
