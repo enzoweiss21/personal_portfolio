@@ -80,10 +80,10 @@ export function LinkedInSection() {
                   data-width="100%"
                   style={{ width: '100%', maxWidth: 'none', margin: 0 }}
                 >
-                  <p lang="zxx" dir="ltr">
-                    <a href="https://t.co/F1mkgFEN5l">pic.twitter.com/F1mkgFEN5l</a>
+                  <p lang="en" dir="ltr">
+                    Take me back to when this excited me <a href="https://twitter.com/hashtag/Python?src=hash&amp;ref_src=twsrc%5Etfw">#Python</a> <a href="https://twitter.com/hashtag/Coding?src=hash&amp;ref_src=twsrc%5Etfw">#Coding</a> <a href="https://twitter.com/hashtag/helloworldn?src=hash&amp;ref_src=twsrc%5Etfw">#helloworldn</a> <a href="https://t.co/WHZcftifVT">pic.twitter.com/WHZcftifVT</a>
                   </p>
-                  &mdash; Enzo Weiss (@weiss_enzo) <a href="https://twitter.com/weiss_enzo/status/1977780974143599008?ref_src=twsrc%5Etfw">October 13, 2025</a>
+                  &mdash; Enzo Weiss (@weiss_enzo) <a href="https://twitter.com/weiss_enzo/status/1978195634290143293?ref_src=twsrc%5Etfw">October 14, 2025</a>
                 </blockquote>
               </div>
             </div>
