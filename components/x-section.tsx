@@ -76,9 +76,10 @@ export function XSection() {
                 style={{ width: '100%', maxWidth: 'none', margin: 0 }}
               >
                 <p lang="en" dir="ltr">
-                  Take me back to when this excited me <a href="https://twitter.com/hashtag/Python?src=hash&amp;ref_src=twsrc%5Etfw">#Python</a> <a href="https://twitter.com/hashtag/Coding?src=hash&amp;ref_src=twsrc%5Etfw">#Coding</a> <a href="https://twitter.com/hashtag/helloworldn?src=hash&amp;ref_src=twsrc%5Etfw">#helloworldn</a> <a href="https://t.co/WHZcftifVT">pic.twitter.com/WHZcftifVT</a>
+                  Large language model-powered AI systems achieve self-replication with no human intervention<a href="https://t.co/Mlj9tWSQrU">https://t.co/Mlj9tWSQrU</a><br />
+                  .....
                 </p>
-                &mdash; Enzo Weiss (@weiss_enzo) <a href="https://twitter.com/weiss_enzo/status/1978195634290143293?ref_src=twsrc%5Etfw">October 14, 2025</a>
+                &mdash; Enzo Weiss (@weiss_enzo) <a href="https://twitter.com/weiss_enzo/status/1979006928408735892?ref_src=twsrc%5Etfw">October 17, 2025</a>
               </blockquote>
             </div>
           </div>
